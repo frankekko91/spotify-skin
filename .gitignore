@@ -1,0 +1,4 @@
+/foundation_sample/5/node_modules/
+*.css
+.DS_Store
+/foundation_sample/5/app/css/global.css.map

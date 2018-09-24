@@ -1,0 +1,10 @@
+.media {
+    @include breakpoint(small only) {
+        display: none;
+    }
+}
+.media-select {
+    @include breakpoint(small only) {
+        display: block;
+    }
+}
