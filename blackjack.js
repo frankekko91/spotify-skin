@@ -1,7 +1,7 @@
-var banchiereCarta1 = Math.floor(Math.random() * 11);
-var banchiereCarta2 = Math.floor(Math.random() * 11); 
-var playerCarta1 = Math.floor(Math.random() * 11);
-var playerCarta2 = Math.floor(Math.random() * 11);
+var banchiereCarta1 = Math.floor((Math.random() * 10) + 1);
+var banchiereCarta2 = Math.floor((Math.random() * 10) + 1); 
+var playerCarta1 = Math.floor((Math.random() * 10) + 1);
+var playerCarta2 = Math.floor((Math.random() * 10) + 1);
 var sommaCarteBanchiere = banchiereCarta1 + banchiereCarta2;
 var sommaCartePlayer = playerCarta1 + playerCarta2;
 
@@ -22,4 +22,4 @@ function checkWinner(a,b) {
         console.log('Il vincitore è il player');
     } 
 }; 
-  
+checkWinner(sommaCarteBanchiere,sommaCartePlayer);

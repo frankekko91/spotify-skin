@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Piadina-Pizza-Kebab</title>
+        <style>
+        .container {
+            display: flex;
+            flex-flow:wrap;
+        }
+        .grid {
+            width:33%;
+            height: 100px;
+        }
+        button {
+            height: 20px;
+            width:33%;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="grid">
+                <img src="../flovero/img/pizza.jpg">
+                <input id="pizza" type="number"/>
+                <button type="submit">Acquista</button>
+            </div>
+            <div class="grid">
+                <img src="../flovero/img/piadina.jpg">
+                <input id="piadina" type="number"/>
+                <button type="submit">Acquista</button>
+            </div>
+            <div class="grid">
+                <img src="../flovero/img/kebab.jpg">
+                <input id="kebab" type="number"/>
+                <button type="submit">Acquista</button>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript">
+        function getData(productName) {
+            return document.getElementById(productName).value;
+        }
+    </script>
+</html>
