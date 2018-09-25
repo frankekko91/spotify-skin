@@ -6,73 +6,57 @@
             width:120px;
             height: 80px;
         }
+
         </style>
     </head>
     <body>
-        <button type="submit" onclick="tiroDadoA_Play();">Tiro giocatore 1</button>
-        <button type="submit" onclick="tiroDadoB_Play();">Tiro giocatore 2</button>
+            <button id="giocatore1" type="submit" onclick="giocatore1Tiro();">Giocatore 1</button>
+            <button id="giocatore2" type="submit" onclick="giocatore2Tiro();">Gocatore 2</button>
     </body>
-
     <script type="text/javascript">
-
-    var vittoriaConsecutivaA = 0,
-        vittoriaConsecutivaB = 0,
-        tiroDadoA = 0,
-        tiroDadoB = 0;
-        
-    
-    function getValue () {
+    var tiroA = 0,
+        tiroB = 0,
+        vittoriaConsA = 0,
+        vittoriaConsB = 0,
+        giocatore1 = 0,
+        giocatore2 = 0;
+    function getValue() {
         return Math.round((Math.random() * 5) + 1);
     }
-     function tiroDadoA_Play() {
-         if (tiroDadoA <= tiroDadoB) {
-        console.log('Lancio dado');
-        tiroDadoA=getValue();
-        console.log(tiroDadoA);
-        vittoriaConsecutivaA++;
-        checkWinner();
-        }   
-    }
-    function tiroDadoB_Play() {
-        if (tiroDadoB <= tiroDadoB) {
-        console.log('Lancio dado');
-        tiroDadoB=getValue();
-        console.log(tiroDadoB);
-        vittoriaConsecutivaB++;
-        checkWinner();
+    function giocatore1Tiro() {
+        if (tiroA <= tiroB) {
+            console.log('Lancio del Giocatore 1');
+            giocatore1 = getValue();
+            console.log(giocatore1);
+            tiroA++;
+            checkWinner();
         }
-    }
-               
+    };
+    function giocatore2Tiro() {
+        if (tiroB <= tiroA) {
+            console.log('Lancio del Giocatore 2');
+            giocatore2 = getValue();
+            console.log(giocatore2);
+            tiroB++;
+            checkWinner();  
+        }
+    };
     function checkWinner() {
-        if (tiroDadoA > tiroDadoB) {
-            vittoriaConsecutivaA++;
-            vittoriaConsecutivaB = 0;
-            checkStreak(true);
-        } else if (tiroDadoB > tiroDadoA) {
-            vittoriaConsecutivaB++;
-            vittoriaConsecutivaB = 0;
-            checkStreak(false);
-        } else {
-            console.log('Pareggio');
-            vittoriaConsecutivaA = 0;
-            vittoriaConsecutivaB = 0;
+        if (tiroA == tiroB) {
+            if (((giocatore1 > giocatore2) && vittoriaConsA != 2) || (vittoriaConsB == 2)) {
+                vittoriaConsA++;
+                vittoriaConsB = 0;
+                console.log("Il giocatore 1 ha vinto.");
+            }else if (((giocatore2 > giocatore1) && vittoriaConsB !=2) || (vittoriaConsA == 2)) {
+                vittoriaConsB++;
+                vittoriaConsA = 0;
+                console.log("Il giocatore 2 ha vinto.");
+            } else {
+                console.log('Pareggio');
+                vittoriaConsA = 0;
+                vittoriaConsB = 0;
+            }
         }
-    }
-
-       function checkStreak() {
-           if (tiroDadoA && vittoriaConsecutivaA != 2) {
-                console.log('Ha vinto il player A.');
-           } else if (tiroDadoB && vittoriaConsecutivaB !=2) {
-                console.log('Ha vinto il player B.');
-           } else if (vittoriaConsecutivaA ==2) {
-                vittoriaConsecutivaB++;
-                vittoriaConsecutivaA = 0;
-               console.log('Ha vinto il player B.');
-           }else if (vittoriaConsecutivaB == 2) {
-               vittoriaConsecutivaA++;
-               vittoriaConsecutivaB = 0;
-               console.log('Ha vinto il player A.');
-           }
-        } 
-      </script>
+    };
+    </script>
 </html>
