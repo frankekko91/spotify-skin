@@ -1,3 +1,4 @@
+//pure functions 
 [
     JSON.stringify(range(2,4)) == JSON.stringify([2,3,4]) ,
     JSON.stringify(range(0,2)) == JSON.stringify([0,1,2])
@@ -12,6 +13,8 @@
        
     }  return result;
 }
+// side effects
+console.log(range(6,8));
 
 
   
