@@ -1,62 +1,61 @@
 <html>
-    <head>
-        <title>Gioco del Dado</title>
-        <style>
-        button {
-            width:120px;
-            height: 80px;
-        }
-
-        </style>
-    </head>
-    <body>
-            <button id="giocatore1" type="submit" onclick="giocatore1Tiro();">Giocatore 1</button>
-            <button id="giocatore2" type="submit" onclick="giocatore2Tiro();">Gocatore 2</button>
-    </body>
-    <script type="text/javascript">
-    var tiroA = 0,
-        tiroB = 0,
-        vittoriaConsA = 0,
-        vittoriaConsB = 0,
-        giocatore1 = 0,
-        giocatore2 = 0;
-    function getValue() {
-        return Math.round((Math.random() * 5) + 1);
-    }
-    function giocatore1Tiro() {
-        if (tiroA <= tiroB) {
-            console.log('Lancio del Giocatore 1');
-            giocatore1 = getValue();
-            console.log(giocatore1);
-            tiroA++;
-            checkWinner();
-        }
-    };
-    function giocatore2Tiro() {
-        if (tiroB <= tiroA) {
-            console.log('Lancio del Giocatore 2');
-            giocatore2 = getValue();
-            console.log(giocatore2);
-            tiroB++;
-            checkWinner();  
-        }
-    };
-    function checkWinner() {
-        if (tiroA == tiroB) {
-            if (((giocatore1 > giocatore2) && vittoriaConsA != 2) || (vittoriaConsB == 2)) {
-                vittoriaConsA++;
-                vittoriaConsB = 0;
-                console.log("Il giocatore 1 ha vinto.");
-            }else if (((giocatore2 > giocatore1) && vittoriaConsB !=2) || (vittoriaConsA == 2)) {
-                vittoriaConsB++;
-                vittoriaConsA = 0;
-                console.log("Il giocatore 2 ha vinto.");
-            } else {
-                console.log('Pareggio');
-                vittoriaConsA = 0;
-                vittoriaConsB = 0;
-            }
-        }
-    };
-    </script>
+   <head>
+      <title>Gioco del Dado</title>
+      <link rel="stylesheet" type="text/css" href="dado-style.css">
+   </head>
+   <body>
+      <div class="container">
+         <div class="container-left">
+            <div class="input-container-option">
+               <input id="4" name="dado" value="4" type="radio"/>
+               <label for="4">4</label>
+               <input id="6" name="dado" value="6" type="radio"/>
+               <label for="6">6</label>
+               <input id="8" name="dado" value="8" type="radio"/>
+               <label for="8">8</label>
+               <input id="10" name="dado" value="10" type="radio"/>
+               <label for="10">10</label>
+               <input id="12" name="dado" value="12" type="radio"/>
+               <label for="12">12</label>
+               <input id="20" name="dado" value="20" type="radio"/>
+               <label for="20">20</label>
+               <input id="100" name="dado" value="100" type="radio"/>
+               <label for="100">100</label>
+            </div>
+            <div class="button-type">
+               <button id="giocatore1" type="submit" data-player="player1">Giocatore 1</button>
+            </div>
+         </div>
+         <div class="container-center">
+            <div id="animation">
+               <span class="circle"></span>
+               <span class="circle"></span>
+               <span class="circle"></span>
+               <span class="circle"></span>
+            </div>
+         </div>
+         <div class="container-left">
+            <div class="input-container-option">
+               <input id="4" name="dado" value="4" type="radio" onclick=""/>
+               <label for="4">4</label>
+               <input id="6" name="dado" value="6" type="radio" onclick=""/>
+               <label for="6">6</label>
+               <input id="8" name="dado" value="8" type="radio" onclick=""/>
+               <label for="8">8</label>
+               <input id="10" name="dado" value="10" type="radio" onclick=""/>
+               <label for="10">10</label>
+               <input id="12" name="dado" value="12" type="radio" onclick=""/>
+               <label for="12">12</label>
+               <input id="20" name="dado" value="20" type="radio" onclick=""/>
+               <label for="20">20</label>
+               <input id="100" name="dado" value="100" type="radio" onclick=""/>
+               <label for="100">100</label>
+            </div>
+            <div class="button-type">
+               <button id="giocatore2" type="submit" data-player="player2">Giocatore 2</button>
+            </div>
+         </div>
+      </div>
+   </body>
+   <script type="text/javascript" src="dado-script.js"></script>
 </html>
