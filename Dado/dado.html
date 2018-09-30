@@ -1,0 +1,71 @@
+<html>
+   <head>
+      <title>Gioco del Dado</title>
+      <link rel="stylesheet" type="text/css" href="dado-style.css">
+   </head>
+   <body>
+      <div class="container">
+            <div>
+                <p>Benvenuto, seleziona il numero delle facce del dado e inserisci il numero da sommare 
+                    al risultato del lacio e scopri se hai vinto.
+                </p>
+            </div>
+         <div class="container-left">
+            <div class="input-container-option">
+               <input id="4" name="dado" value="3" type="radio"/>
+               <label for="4">4</label>
+               <input id="6" name="dado" value="5" type="radio"/>
+               <label for="6">6</label>
+               <input id="8" name="dado" value="7" type="radio"/>
+               <label for="8">8</label>
+               <input id="10" name="dado" value="9" type="radio"/>
+               <label for="10">10</label>
+               <input id="12" name="dado" value="11" type="radio"/>
+               <label for="12">12</label>
+               <input id="20" name="dado" value="19" type="radio"/>
+               <label for="20">20</label>
+               <input id="100" name="dado" value="100" type="radio"/>
+               <label for="100">100</label>
+                <div>
+                    <input id="input-dado" type="number"/>
+                </div> 
+            </div>
+            <div class="button-type">
+               <button id="giocatore1" type="submit" data-player="player1">Giocatore 1</button>
+            </div>
+         </div>
+         <div class="container-center">
+            <p id="roll"></p>
+            <p id ="result"></p>
+            <div id="animation">
+               <span class="circle"></span>
+               <span class="circle"></span>
+               <span class="circle"></span>
+               <span class="circle"></span>
+            </div>
+         </div>
+         <div class="container-left">
+            <div class="input-container-option">
+               <input id="4" name="dado2" value="4" type="radio" onclick=""/>
+               <label for="4">4</label>
+               <input id="6" name="dado2" value="6" type="radio" onclick=""/>
+               <label for="6">6</label>
+               <input id="8" name="dado2" value="8" type="radio" onclick=""/>
+               <label for="8">8</label>
+               <input id="10" name="dado2" value="10" type="radio" onclick=""/>
+               <label for="10">10</label>
+               <input id="12" name="dado2" value="12" type="radio" onclick=""/>
+               <label for="12">12</label>
+               <input id="20" name="dado2" value="20" type="radio" onclick=""/>
+               <label for="20">20</label>
+               <input id="100" name="dado2" value="100" type="radio" onclick=""/>
+               <label for="100">100</label>
+            </div>
+            <div class="button-type">
+               <button id="giocatore2" type="submit" data-player="player2">Giocatore 2</button>
+            </div>
+         </div>
+      </div>
+   </body>
+   <script type="text/javascript" src="dado-script.js"></script>
+</html>
