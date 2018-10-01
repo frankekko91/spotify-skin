@@ -1,0 +1,9 @@
+.accordion {
+  width: 90%;
+  max-width: 40em;
+  margin: 2em auto; }
+  .accordion__panel {
+    max-height: 0;
+    overflow: hidden; }
+    .accordion__panel.is-active {
+      max-height: 15em; }
