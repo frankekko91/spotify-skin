@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,40 +8,50 @@
     <link rel="stylesheet" href="css/global.css">
     <title>Solid&Striped</title>
 </head>
+
 <body>
-    <div class="nav">
+    <div class="nav text-center">
         <h1>Solid & Striped by Francesco Lovero</h1>
     </div>
     <!-- main grid-->
     <div class="grid-container">
         <div class="grid-x grid-margin-x">
             <!--  grid image-->
-          <div class="small-12 medium-6 columns">
-              <img src="img/slip-black.jpg">
-          </div>
-          <div class="small-12 medium-6 columns product-info">
-              <div class="cell large-6">
-                <div>
-                    <h2>Prodotto : Slip</h2>
+            <div class="small-12 medium-6 columns">
+                <img src="img/slip-black.jpg">
+            </div>
+            <!--grid details-->
+            <div class="small-12 medium-6 columns product-info">
+                <div class="cell large-6">
+                    <div class="text-center">
+                        <h2>Prodotto : Slip</h2>
+                    </div>
+                    <div class="small-12 medium-6 columns">
+                        <!--Checkbos size-->
+                        <fieldset>
+                            <legend>Taglia</legend>
+                            <input name="checkbox-size" id="checkbox1" type="checkbox" value="S">
+                            <label for="checkbox1">S</label>
+                            <input name="checkbox-size" id="checkbox2" type="checkbox" value="M">
+                            <label for="checkbox2">M</label>
+                            <input name="checkbox-size" id="checkbox3" type="checkbox" value="L">
+                            <label for="checkbox3">L</label>
+                        </fieldset>
+                        <!--Radio button color-->
+                        <fieldset>
+                            <legend>Color</legend>
+                            <input id="black" name="radio-color" type="radio" name="color" value="black" id="slipBlack" required>
+                            <label for="slipBlack">Black</label>
+                            <input id="red" name="radio-color" type="radio" name="color" value="red" id="slipRed">
+                            <label for="slipRed">Red</label>
+                            <p id="price"></p>
+                        </fieldset>
+                    </div>
                 </div>
-                <div class="small-12 medium-6 columns">
-                    <fieldset >
-                        <legend>Taglia</legend>
-                        <input id="checkbox1" type="checkbox"><label for="checkbox1">S</label>
-                        <input id="checkbox2" type="checkbox"><label for="checkbox2">M</label>
-                        <input id="checkbox3" type="checkbox"><label for="checkbox3">L</label>
-                    </fieldset>
-                    <fieldset >
-                        <legend>Color</legend>
-                        <input type="radio" name="color" value="black" id="slipBlack" required><label for="slipBlack">Black</label>
-                        <input type="radio" name="color" value="red" id="slipRed"><label for="slipRed">Red</label>
-                        <p>Prezzo 99€</p>
-                    </fieldset>
-                </div>
-              </div>
-          </div>
+            </div>
         </div>
     </div>
     <script src="js\main.js"></script>
 </body>
+
 </html>
