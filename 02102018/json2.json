@@ -1,0 +1,30 @@
+{
+    "product-list" : [
+        {
+            "id" : 001,
+            "product-name" :"",
+            "product-type" :"",
+            "product-category" : [],
+            "product-color":"",
+            "product-size":"",
+            "relationship" :[{
+                "idAssociazione":"",
+                "typeRelationship:""          //2valore o color o size
+            ]}
+
+        },{
+            "id" :002,
+            1 colore
+            1 taglia
+            1 prezzo
+        },{
+            "id" :002,
+            1 colore
+            1 taglia
+            1 prezzo
+        }
+
+    
+    ]
+}
+riferimenti con array oggetto realtionship con altri prodotti

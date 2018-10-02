@@ -1,0 +1,66 @@
+{
+    "class" : {
+        "persons" : [
+            {
+                "id" : 0,
+                "name" : "Serena",
+                "età" : 23
+            },{
+                "id" : 1,
+                "name" : "Nicola",
+                "età" : 21
+            },{
+                "id" : 2,
+                "name" : "Giorgio",
+                "età" : 27
+            },{
+                "id" : 3,
+                "name" : "Illy",
+                "età" : 25
+            },{
+                "id" : 4,
+                "name" : "Matteo",
+                "età" : 22
+            },{
+                "id" : 5,
+                "name" : "Francesco",
+                "età" : 26
+            },{
+                "id" : 7,
+                "name" : "Ivan",
+                "età" : 20
+            },{
+                "id" : 11,
+                "name" : "Claudio",
+                "età" : 40
+            }
+        ],
+            "computers" : [
+                {
+                    "id" : 0,
+                    "name" :"Dell"
+                },{
+                    "id" : 1,
+                    "name" :"Dell"
+                },{
+                    "id" : 2,
+                    "name" :"Asus"
+                },{
+                    "id" : 3,
+                    "name" :"Dell"
+                },{
+                    "id" : 4,
+                    "name" :"Dell"
+                },{
+                    "id" : 5,
+                    "name" :"Dell"
+                },{
+                    "id" : 7,
+                    "name" :"Dell"
+                },{
+                    "id" : 11,
+                    "name": "HP"
+                }
+         ]
+     }
+}   
