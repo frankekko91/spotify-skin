@@ -14,11 +14,11 @@
         <h1>Solid & Striped by Francesco Lovero</h1>
     </div>
     <!-- main grid-->
-    <div class="grid-container">
+    <div class="grid-container fluid">
         <div class="grid-x grid-margin-x">
             <!--  grid image-->
-            <div class="small-12 medium-6 columns">
-                <img src="img/slip-black.jpg">
+            <div id="product-image" class="small-12 medium-6 columns grid-x">
+                <img class="cell small-6" alt="" src="img/slip-black.jpg">
             </div>
             <!--grid details-->
             <div class="small-12 medium-6 columns product-info">
@@ -34,16 +34,16 @@
                             <label for="checkbox1">S</label>
                             <input name="checkbox-size" id="checkbox2" type="checkbox" value="M">
                             <label for="checkbox2">M</label>
-                            <input name="checkbox-size" id="checkbox3" type="checkbox" value="L">
+                            <input name="checkbox-size" id="checkbox3" type="checkbox" value="L" disabled>
                             <label for="checkbox3">L</label>
                         </fieldset>
                         <!--Radio button color-->
                         <fieldset>
                             <legend>Color</legend>
-                            <input id="black" name="radio-color" type="radio" name="color" value="black" id="slipBlack" required>
-                            <label for="slipBlack">Black</label>
-                            <input id="red" name="radio-color" type="radio" name="color" value="red" id="slipRed">
-                            <label for="slipRed">Red</label>
+                            <input id="black" name="radio-color" type="radio" name="color" value="black" disabled>
+                            <label for="black">Black</label>
+                            <input id="red" name="radio-color" type="radio" name="color" value="red" disabled>
+                            <label for="red">Red</label>
                             <p id="price"></p>
                         </fieldset>
                     </div>
