@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- LOADER -->
+        <div class="loader">
+            <div class="loader__background">
+                <img class="loader__icon" src="media/loader.svg" alt="loader">
+            </div>
+        </div>
+
+        <!-- MODAL -->
+        <div class="modal">
+            <div class="modal__background">
+                <div class="modal__box">
+                    <button onclick="closeModal()" class="modal__close">&times;</button>
+                    <h4 class="modal__title"></h4>
+                    <p class="modal__paragraph"></p>
+                    <button onclick="closeModal()" class="modal__button">Accetto</button>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+    

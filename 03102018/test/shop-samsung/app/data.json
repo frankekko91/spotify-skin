@@ -1,0 +1,47 @@
+{
+    "elements": [
+        {
+            "id": 1,
+            "title": "I-Fogn Note 9",
+            "subTitle": "Il note piu potente di sempre",
+            "link": "https://www.samsung.com/it/smartphones/galaxy-note9/buy",
+            "img": "https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.bell.ca%2FStyles%2Fwireless%2Fall_languages%2Fall_regions%2Fcatalog_images%2Flarge%2FiPhone7Plus_MatBlk_en.png&f=1"
+        }, {
+            "id": 2,
+            "title": "Con Galaxy Note9 fino a 1 terabyte di memoria",
+            "paragraph": "Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione. È sopravvissuto non solo a più di cinque secoli, ma anche al passaggio alla videoimpaginazione, pervenendoci sostanzialmente inalterato. ",
+            "link": "https://shop.samsung.com/it/note9terabyte/",
+            "img": "https://eu-images.shop.samsung.com/medias/value-MINIBANNER-QUADRATO-PC.png?context=bWFzdGVyfGltYWdlc3wxOTYwOTl8aW1hZ2UvcG5nfGltYWdlcy9oOTgvaGFiLzExNzU3ODI5Njg1Mjc4LnBuZ3w5YzNiMTNjMGFjOWY3ZGM5ZWQwODliNjk5NDk4M2Q2NDBjMDUwMzk4ODA0MjM0NTNiZDIwMzg0MDhhNmUzODQx"
+        }, {
+            "id": 3,
+            "title": "Rivivi i tuoi attimi piu belli",
+            "paragraph": "Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione. È sopravvissuto non solo a più di cinque secoli, ma anche al passaggio alla videoimpaginazione, pervenendoci sostanzialmente inalterato. ",
+            "link": "https://shop.samsung.com/it/hpsprocket",
+            "img": "https://eu-images.shop.samsung.com/medias/MINIBANNER-QUADRATO-PC.jpg?context=bWFzdGVyfGltYWdlc3wzMzEyOHxpbWFnZS9qcGVnfGltYWdlcy9oOWMvaDk5LzExODg3Nzc5NTQ1MTE4LmpwZ3xhMmNlZDY4ZDRjYjU5MjM2YTFmNDQzZmFlMGE3OTllMjJhOWJhOTc3NzgxOWI0M2VkNGM3NDJlYWJjNTliM2E3"
+        }, {
+            "id": 4,
+            "title": "Passa alla nuova tecnologia",
+            "paragraph": "Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione. È sopravvissuto non solo a più di cinque secoli, ma anche al passaggio alla videoimpaginazione, pervenendoci sostanzialmente inalterato. ",
+            "link": "https://shop.samsung.com/it/rimborso300",
+            "img": "https://eu-images.shop.samsung.com/medias/MINIBANNER-PICCOLO-PC.png?context=bWFzdGVyfGltYWdlc3wxODUxNjR8aW1hZ2UvcG5nfGltYWdlcy9oYWEvaGMzLzExNzYzMDkxODMyODYyLnBuZ3wxZWY2MTFlYTViZTA3ZTc1MmY3YzcyYTFmMjUzYTIxODRmMDY0MDQxMjNiYzhkNWVjOTA0MDFhM2M3NDlmZjQ1"
+        }, {
+            "id": 5,
+            "title": "Galaxy watch",
+            "paragraph": "Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione. È sopravvissuto non solo a più di cinque secoli, ma anche al passaggio alla videoimpaginazione, pervenendoci sostanzialmente inalterato. ",            
+            "link": "https://shop.samsung.com/it/galaxywatch",
+            "img": "https://eu-images.shop.samsung.com/medias/Galaxy-Watch-pc.jpg?context=bWFzdGVyfGltYWdlc3wzMzkyMnxpbWFnZS9qcGVnfGltYWdlcy9oNTIvaGMzLzExNzQ4Mzk2MTA1NzU4LmpwZ3w4MGEyMGY4ZTEzYTQzYWY1ZWU1NTcxNGU5NzY0OTg3NGEzM2FkYjI3YjEyOTg5MjQzZTgxM2FhMzhiM2VmZDc2"
+        }, {
+            "id": 6,
+            "title": "POWERstick PRO",
+            "paragraph": "Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione. È sopravvissuto non solo a più di cinque secoli, ma anche al passaggio alla videoimpaginazione, pervenendoci sostanzialmente inalterato. ",
+            "link": "https://shop.samsung.com/it/powerstickpro",
+            "img": "https://eu-images.shop.samsung.com/medias/MINIBANNER-PICCOLO-PCokokok.png?context=bWFzdGVyfGltYWdlc3wyMjk0MHxpbWFnZS9wbmd8aW1hZ2VzL2hiNy9oNzQvMTE5OTk0NzMwNzQyMDYucG5nfDk1ODdhNDA3NzMxMzMxYWEyZjY0MWIzN2E5OTAyNjIwMTc0NDMzY2FlNzQyZDllNGFhZmMzNmQ3ODY3MTgxZjQ"
+        }, {
+            "id": 7,
+            "title": "FamilyHub ti regala TV 55",
+            "paragraph": "Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione. È sopravvissuto non solo a più di cinque secoli, ma anche al passaggio alla videoimpaginazione, pervenendoci sostanzialmente inalterato. ",
+            "link": "https://shop.samsung.com/it/fhregalatv/",
+            "img": "https://eu-images.shop.samsung.com/medias/MINIBANNER-PICCOLO-PC.png?context=bWFzdGVyfGltYWdlc3wxNzI0MDR8aW1hZ2UvcG5nfGltYWdlcy9oNjQvaGJhLzExNzU1ODEyMzU2MTI2LnBuZ3w5NDNhNzRmOGMwZjZjYzg5N2E0ZDUzMmNkNjk4OTIzYTk1ZjA2ZmViYTMzMjI2NTMwNGRhMWU0MDI1MDY4Yzli"
+        } 
+    ]
+}
