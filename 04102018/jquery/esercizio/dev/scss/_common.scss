@@ -1,0 +1,15 @@
+body {
+    background: $off-white;
+    color: $black;
+}
+
+html.prevent-scroll,
+html.prevent-scroll body {
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1070px;
+    margin: 2em auto;
+}

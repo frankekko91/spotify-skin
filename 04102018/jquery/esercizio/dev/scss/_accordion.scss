@@ -1,0 +1,51 @@
+.accordion {
+    margin: 2em auto;
+
+    &__header {
+        margin: 0;
+        transition: background-color 250ms ease;
+        background-color: lighten($light-grey, 15%);
+
+        &:hover {
+            background-color: lighten($light-grey, 10%);
+        }
+
+        a {
+            display: inline-block;
+            padding: 0.5em 1em;
+            width: 100%;
+            font-size: 0.75em;
+            vertical-align: middle;
+            color: $black;
+
+            img {
+                transition: transform 250ms ease;
+                vertical-align: middle;
+            }
+        }
+
+        &.is-active {
+            a {
+                img {
+                    transform: rotate(90deg);
+                }
+            }
+        }
+    }
+
+    &__panel {
+        max-height: 0;
+        overflow: hidden;
+        background-color: $white;
+        transition: max-height 250ms ease;
+        border: 1px solid lighten($light-grey, 15%);
+
+        &.is-active {
+            max-height: 15em;
+        }
+    }
+
+    &__paragraph {
+        padding: 1em;
+    }
+}
