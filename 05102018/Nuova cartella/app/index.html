@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Modal Class</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/global.css">
+
+</head>
+
+<body>
+
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+                <li class="menu-text">Modal Class</li>
+                <li><a href="#one">One</a></li>
+                <li><a href="#two">Two</a></li>
+                <li><a href="#three">Three</a></li>
+            </ul>
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu">
+                <li><input type="search" placeholder="Search"></li>
+                <li><button type="button" class="button">Search</button></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="wrapper" id="one">
+        <h1>Modal Class</h1>
+
+        <form id="form" class="input-group  ">
+            <label for="label" class="input-group-label">Label :</label>
+            <input type="text" class="input-group-field" value="" name="label" id="label" placeholder="Inserisci una label">
+            <div class="input-group-button">
+                <input type="submit" class="button" value="Salva">
+            </div>
+            <input type="hidden" name="secret" id="secret">
+        </form>
+
+        <ul class="todos">
+
+        </ul>
+
+        <a href="" id="info">Info</a>
+        <a href="" id="warning">Warning</a>
+    </div> <!-- end .wrapper-->
+
+    <div id="two">2</div>
+    <div id="three">3</div>
+
+
+    <div class="modal">
+        <div class="modal__background">
+            <div class="modal__loader">
+                <img src="images/loader.svg" />
+            </div>
+            <div class="modal__box modal__box--info" id="modal__info">
+                <div class="modal__close">&times;</div>
+                <h3 class="modal__title">
+                    Info Box
+                </h3>
+                <div class="modal__paragraph">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet culpa officia illum, impedit
+                    corrupti voluptas rem itaque rerum suscipit repellendus dolorem quasi, illo vero laudantium fuga
+                    iste porro nostrum laborum!
+                </div>
+                <div class="modal__button button">OK</div>
+            </div>
+            <div class="modal__box modal__box--warning" id="modal__warning">
+                <div class="modal__close">&times;</div>
+                <h3 class="modal__title">
+                    Warning Box
+                </h3>
+                <div class="modal__paragraph">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet culpa officia illum, impedit
+                    corrupti voluptas rem itaque rerum suscipit repellendus dolorem quasi, illo vero laudantium fuga
+                    iste porro nostrum laborum!
+                </div>
+                <div class="modal__button button">OK</div>
+            </div>
+        </div>
+    </div>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src="js/modal.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/nav.js"></script>
+
+
+</body>
+
+</html>
