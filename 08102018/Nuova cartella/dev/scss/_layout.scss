@@ -1,0 +1,33 @@
+body {
+    font-family: 'Mali', cursive;
+    font-weight: 500;
+}
+.head {
+    font-size: 40px;
+    font-weight: bold;
+}
+.message-box {
+    font-size: 20px;
+    border-radius: 20px;
+}
+.error-name,
+.error-surname,
+.error-object,
+.error-message {
+    color:red;
+}
+.chat {
+    border: 5px solid white;
+    background-image: url(../img/background.jpg);
+}
+.date-time-message {
+    font-size: 12px;    
+}
+@keyframes anim {
+    from {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 1;
+    }
+}
