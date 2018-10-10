@@ -1,0 +1,1 @@
+"use strict";document.addEventListener("DOMContentLoaded",function(e){console.log("DOM completamente caricato e analizzato"),document.getElementById("babel").innerHTML="New babel WOW"});

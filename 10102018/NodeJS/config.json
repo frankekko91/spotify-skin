@@ -1,0 +1,14 @@
+{
+    "styles": {
+        "src": "src/scss",
+        "dist": "dist/scss"
+    },
+    "js": {
+        "src": "src/js",
+        "dist": "dist/js"
+    },
+    "html": {
+        "src": "src/html",
+        "dist": "dist/html"
+    }
+}

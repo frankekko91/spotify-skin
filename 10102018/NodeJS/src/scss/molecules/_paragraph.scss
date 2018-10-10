@@ -1,0 +1,9 @@
+p{
+    font-size: $paragraph-size;
+    &.small {
+        font-size: $paragraph-small-size;
+    }
+    &.big {
+        font-size: $paragraph-big-size;
+    }
+}
