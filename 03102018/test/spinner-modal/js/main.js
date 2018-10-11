@@ -24,8 +24,21 @@ document.addEventListener("DOMContentLoaded", function (event) {
         modal.querySelector(".modal__paragraph").innerHTML = data.descrizione;
     });
 
+    document.addEventListener('keydown', (e) => {
+        e.preventDefault();
+        if(e.key === "Escape") {
+            closeModal();
+        } else {
 
+        }
+    })
 });
 function closeModal() {
+    var days = 100;
+    var date = new Date();
+    date.setTime(date.setTime() + (days *24 * 60 * 1000));
+    var expires = "; expires ="+ date.toString();
+    document.cookie = "Windows closed" + expires + "; path=/";
+
     document.querySelector('.modal').style.display = "none";
 }
