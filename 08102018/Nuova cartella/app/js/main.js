@@ -26,27 +26,27 @@ $(document).ready(function () {
 
     $("#button-submit").on('click', event => {
         event.preventDefault();
-            chat();
-        
-            // Set time for animation
-            setTimeout(function () {
-                $('.chat').css('border', '5px solid white');
-            }, 1500);
-            //Call function for send new message
-            newMessage();
+        chat();
 
-            var myMessage = {
-                "id": data.messages.length + 1,
-                "name": name + " " + surname,
-                "subject": object,
-                "message": message,
-            }
+        // Set time for animation
+        setTimeout(function () {
+            $('.chat').css('border', '5px solid white');
+        }, 1500);
+        //Call function for send new message
+        newMessage();
 
-            pushData(myMessage);
-        });
+        var myMessage = {
+            "id": data.messages.length + 1,
+            "name": name + " " + surname,
+            "subject": object,
+            "message": message,
+        }
 
-        function chat() {
-            let i = 0;
+        pushData(myMessage);
+    });
+
+    function chat() {
+        let i = 0;
         var errName = $(".error-name");
         var errSurname = $(".error-surname");
         var errObject = $(".error-object");
@@ -97,27 +97,27 @@ $(document).ready(function () {
         }
     }
 
-        function newMessage() {
-            // Hide name and surname form
-            $(".name-form").fadeOut();
-            $(".surname-form").fadeOut();
-            // Clean object and message
-            $("#object").val('');
-            $("#message").val('');
-        }
+    function newMessage() {
+        // Hide name and surname form
+        $(".name-form").fadeOut();
+        $(".surname-form").fadeOut();
+        // Clean object and message
+        $("#object").val('');
+        $("#message").val('');
+    }
 
-        function pushData(myMessage) {
-            $.ajax({
-                url: "http://172.16.15.200:3000/push",
-                dataType: "json",
-                data: {
-                    "message": encodeURIComponent(JSON.stringify(myMessage)),
-                },
-                statusCode: {
-                    200: function () {
-                        console.log("Message is pushed.");
-                    }
+    function pushData(myMessage) {
+        $.ajax({
+            url: "http://172.16.15.200:3000/push",
+            dataType: "json",
+            data: {
+                "message": encodeURIComponent(JSON.stringify(myMessage)),
+            },
+            statusCode: {
+                200: function () {
+                    console.log("Message is pushed.");
                 }
-            })
-        }
-}); 
+            }
+        })
+    }
+});
