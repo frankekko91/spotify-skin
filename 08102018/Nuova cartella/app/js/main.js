@@ -26,50 +26,8 @@ $(document).ready(function () {
 
     $("#button-submit").on('click', event => {
         event.preventDefault();
-        let i = 0;
-        var name = $("#name").val();
-        var surname = $("#surname").val();
-        var object = $("#object").val();
-        var message = $("#message").val();
-        var todayDate = new Date($.now());
-        // Input control
-        if (name.length < 3) {
-            $(".error-name").text("Nome incompleto, deve essere più lungo di 3 caratteri.");
-            i++;
-        } else {
-            $(".error-name").text("");
-        }
-        if (surname.length < 3) {
-            $(".error-surname").text("Cognome incompleto, deve essere più lungo di 3 caratteri.");
-            i++;
-        } else {
-            $(".error-surname").text("");
-        }
-        if (object >= 1 && object <= 5) {
-            $(".error-object").text("Oggetto incompleto, deve essere più lungo di 5 caratteri o lasciato vuoto.");
-            i++;
-        } else {
-            $(".error-object").text("");
-        }
-        if (message.length < 1) {
-            $(".error-message").text("Messaggio incompleto, deve essere più lungo di 25 caratteri.");
-            i++;
-        } else {
-            $(".error-message").text("");
-        }
-        if (i === 0) {
-            //Create new div
-            var div = $("<div>");
-            div.addClass("message-box");
-
-            div.html(`<p>Nome: ${name}.<br/>Cognome: ${surname}.<br/>Oggetto: ${object}.<br/>Testo: ${message}.</p><br/><span class="date-time-message">Data invio: ${todayDate}</span><hr/>`);
-            alert("Messaggio inviato.");
-            // Append div
-            $(".inner-chat").append($(div)).fadeIn();
-            $('.chat').css({
-                'border': '5px solid lightgreen',
-                'animation': 'anim 2s ease-in-out ',
-            });
+            chat();
+        
             // Set time for animation
             setTimeout(function () {
                 $('.chat').css('border', '5px solid white');
@@ -84,6 +42,71 @@ $(document).ready(function () {
                 "message": message,
             }
 
+            pushData(myMessage);
+        });
+
+        function chat() {
+            let i = 0;
+        var errName = $(".error-name");
+        var errSurname = $(".error-surname");
+        var errObject = $(".error-object");
+        var errMessage = $(".error-message");
+        var name = $("#name").val();
+        var surname = $("#surname").val();
+        var object = $("#object").val();
+        var message = $("#message").val();
+        var todayDate = new Date($.now());
+        // Input control
+        if (name.length < 3) {
+            errName.text("Nome incompleto, deve essere più lungo di 3 caratteri.");
+            i++;
+        } else {
+            errName.text("");
+        }
+        if (surname.length < 3) {
+            errSurname.text("Cognome incompleto, deve essere più lungo di 3 caratteri.");
+            i++;
+        } else {
+            errSurname.text("");
+        }
+        if (object >= 1 && object <= 5) {
+            errObject.text("Oggetto incompleto, deve essere più lungo di 5 caratteri o lasciato vuoto.");
+            i++;
+        } else {
+            errObject.text("");
+        }
+        if (message.length < 1) {
+            errMessage.text("Messaggio incompleto, deve essere più lungo di 25 caratteri.");
+            i++;
+        } else {
+            errMessage.text("");
+        }
+        if (i === 0) {
+            //Create new div
+            var div = $("<div>");
+            div.addClass("message-box");
+
+            div.html(`<p>Nome: ${name}.<br/>Cognome: ${surname}.<br/>Oggetto: ${object}.<br/>Testo: ${message}.</p><br/><span class="date-time-message">Data invio: ${todayDate}</span><hr/>`);
+            alert("Messaggio inviato.");
+            // Append div
+            $(".inner-chat").append($(div)).fadeIn();
+            $('.chat').css({
+                'border': '5px solid lightgreen',
+                'animation': 'anim 2s ease-in-out ',
+            });
+        }
+    }
+
+        function newMessage() {
+            // Hide name and surname form
+            $(".name-form").fadeOut();
+            $(".surname-form").fadeOut();
+            // Clean object and message
+            $("#object").val('');
+            $("#message").val('');
+        }
+
+        function pushData(myMessage) {
             $.ajax({
                 url: "http://172.16.15.200:3000/push",
                 dataType: "json",
@@ -97,14 +120,4 @@ $(document).ready(function () {
                 }
             })
         }
-
-        function newMessage() {
-            // Hide name and surname form
-            $(".name-form").fadeOut();
-            $(".surname-form").fadeOut();
-            // Clean object and message
-            $("#object").val('');
-            $("#message").val('');
-        }
-    });
-});
+}); 
